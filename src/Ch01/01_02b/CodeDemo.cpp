@@ -3,9 +3,11 @@
 // Hello World, by Eduardo Corpeño 
 
 #include <iostream>
-
+#include <string>
 int main(){
-    std::cout << "Hello World" << std::endl;
-    std::cout << std::endl << std::endl;
+    std::string name;
+    std::cout << "Enter Your Name:" << std::flush;
+    std::cin >> name;
+    std::cout << "Nice to meet you, " << name << "!" << std::endl;
     return 0;
 }
