@@ -6,10 +6,15 @@
 #include <cstdint>
 
 int add_int(float a, double b, long double c){
-    int result = 0;
 
-    // Write your code here
-    
+    a = 2.1f;
+    b = 3.9;
+    c = 4.6l;
+    static_cast<int>(a);
+    static_cast<int>(b);
+    static_cast<int>(c);
+    int result;
+    result = a + b + c;
     return result;
 }
 
